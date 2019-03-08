@@ -8,6 +8,16 @@ import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {isVisible: true}
+    this.toggleJobs = this.toggleJobs.bind(this)
+  }
+
+  toggleJobs(){
+    this.setState({isVisible: !isVisible})
+  }
+
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -20,7 +30,8 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
-        <Jobs />
+        <button onClick={this.toggleJobs}>Toggle Jobs</button>
+        {this.isVisible? <Jobs /> : null }
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

@@ -12,11 +12,14 @@ import { rhythm } from "../utils/typography"
 //import custom react components
 import DateRange from "./DateRange"
 
-function Job(props){
+class Job extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    render(){
     const {work} = props 
     return (
      <div>
-         <button>Test</button>
        {work.map( (job) => {
            const {company, position, startDate, endDate, highlights, isCurrentJob} = job;
            return(
@@ -35,11 +38,10 @@ function Job(props){
      </div>
     );
 }
+}
 
-function Jobs(props) {
-    console.log(props)
-
-    
+class Jobs extends React.Component {
+    render(){
   return (
     <StaticQuery
       query={jobQuery}
@@ -60,6 +62,7 @@ function Jobs(props) {
       }}
     />
   )
+    }
 }
 
 const jobQuery = graphql`
