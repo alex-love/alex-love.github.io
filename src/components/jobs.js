@@ -11,19 +11,19 @@ import { StaticQuery, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 
 function Job(props){
-    const {title, bullets} = props
+    const {work} = props 
     return (
-        <div>
-    <ul>
-        {bullets.map((bullet,index) =>
-        <li key={index}>
-        {bullet}
-        </li>
-                     
-
-        )}
-    </ul>
-    </div>
+     <div>
+       {work.map( (job) => {
+           const {company, position, startDate, endDate, highlights} = job;
+           return(
+            <div>
+                <h3>{company}</h3>
+                <p>{position}</p>
+            </div>
+           )
+       })}
+     </div>
     );
 }
 
@@ -35,7 +35,7 @@ function Jobs(props) {
     <StaticQuery
       query={jobQuery}
       render={data => {
-        const { title, bullets } = data.site.siteMetadata.jobs
+        const { work } = data.dataJson
         return (
           <div
             style={{
@@ -43,7 +43,9 @@ function Jobs(props) {
               marginBottom: rhythm(2.5),
             }}
           >
-            <Job  title={title} bullets={bullets}/>
+          <Job work={work}/>
+            
+            
           </div>
         )
       }}
@@ -60,16 +62,16 @@ const jobQuery = graphql`
         }
       }
     }
-    site {
-      siteMetadata {
-        author
-        jobs
-        {
-            title
-            bullets
+	dataJson{
+        work{
+          company
+          position
+          highlights
+          startDate
+          endDate
+          highlights
         }
       }
-    }
   }
 `
 

@@ -65,4 +65,5 @@ const bioQuery = graphql`
     }
   }
 `
+
 export default Bio
