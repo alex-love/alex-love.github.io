@@ -21,11 +21,12 @@
       }]
     },
     "work": [{
-      "company": "Company",
-      "position": "President",
+      "currentJob": true,
+      "company": "Corner Booth Media",
+      "position": "Web Developer and Analyst",
       "website": "http://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
+      "startDate": "2018-04-16",
+      "endDate": "Present",
       "summary": "ipsum asdoifadspofiu aflakfj dlk jadslkj lsdkfj lsdkjf lsdkfj lsdfk ...",
       "highlights": [
         "Founded the company",
@@ -33,7 +34,8 @@
         "Defrauded millions of dollars from initial investors"
       ]
     },
-    {
+    {   
+        "currentJob": false,
         "company": "Company2",
         "position": "VP",
         "website": "http://company.com",
@@ -46,7 +48,8 @@
             "plotted to put my coworkers against each other"
         ]
     },
-    {
+    {   
+        "currentJob": false,
         "company": "Company3",
         "position": "Jr. Vp",
         "website": "http://company.com",

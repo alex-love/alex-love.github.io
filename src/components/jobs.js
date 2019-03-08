@@ -7,19 +7,28 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-
 import { rhythm } from "../utils/typography"
+
+//import custom react components
+import DateRange from "./DateRange"
 
 function Job(props){
     const {work} = props 
     return (
      <div>
+         <button>Test</button>
        {work.map( (job) => {
-           const {company, position, startDate, endDate, highlights} = job;
+           const {company, position, startDate, endDate, highlights, isCurrentJob} = job;
            return(
             <div>
+                <DateRange startDate={startDate} endDate={endDate} isCurrentJob={isCurrentJob} />
                 <h3>{company}</h3>
-                <p>{position}</p>
+                <p><em>{position}</em></p>
+                <ul>
+                    {highlights.map((highlight,index)=>{
+                        return <li key={index}>{highlight}</li>
+                    })}
+                </ul>
             </div>
            )
        })}
@@ -64,6 +73,7 @@ const jobQuery = graphql`
     }
 	dataJson{
         work{
+          currentJob
           company
           position
           highlights
