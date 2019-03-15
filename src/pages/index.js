@@ -6,7 +6,7 @@ import Jobs from "../components/jobs"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-
+import "../components/utility.css"
 
 
 class BlogIndex extends React.Component {
@@ -14,22 +14,29 @@ class BlogIndex extends React.Component {
     super(props)
     this.state = {
       showJobs: true,
+      className: 'show',
     }
     this.toggleJobs = this.toggleJobs.bind(this);
 
   }
 
   toggleJobs() {
-    this.setState(prevState => ({
-      showJobs: !prevState.showJobs
-    }));
+    // this.setState(prevState => ({
+    //   showJobs: !prevState.showJobs
+    // }));
+    if(this.state.className === 'show'){
+      this.setState({className: 'hide'})
+    }
+    else {
+      this.setState({className:'show'})
+    }
   }
 
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-    const {showJobs} = this.state 
+    const {showJobs, className} = this.state 
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -40,7 +47,10 @@ class BlogIndex extends React.Component {
         
         <Bio />
         <button onClick={this.toggleJobs}>Toggle Jobs</button>
-        {!showJobs ? <Jobs isShowing={true} /> : null}
+        <div className={className}>
+        <Jobs />
+        {/*!showJobs ? <Jobs isShowing={true} /> : null*/}
+        </div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

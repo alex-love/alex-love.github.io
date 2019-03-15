@@ -38,8 +38,9 @@ function Job(props){
 class Jobs extends React.Component {
   constructor(props){
     super(props)
-
   }
+
+
 
 
   render(){
@@ -56,7 +57,7 @@ class Jobs extends React.Component {
               marginBottom: rhythm(2.5),
             }}
           >
-          <Job work={work} c={this.props.isShowing ? 'show' : 'hide'}/>
+          <Job work={work} />
             
             
           </div>
