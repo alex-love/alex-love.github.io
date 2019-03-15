@@ -19,7 +19,7 @@ function Job(props){
        {work.map( (job) => {
            const {company, position, startDate, endDate, highlights, isCurrentJob} = job;
            return(
-            <div>
+            <div className={props.c}>
                 <DateRange startDate={startDate} endDate={endDate} isCurrentJob={isCurrentJob} />
                 <h3>{company}</h3>
                 <p><em>{position}</em></p>
@@ -35,10 +35,15 @@ function Job(props){
     );
 }
 
-function Jobs(props) {
-    console.log(props)
+class Jobs extends React.Component {
+  constructor(props){
+    super(props)
 
-    
+  }
+
+
+  render(){
+
   return (
     <StaticQuery
       query={jobQuery}
@@ -51,7 +56,7 @@ function Jobs(props) {
               marginBottom: rhythm(2.5),
             }}
           >
-          <Job work={work}/>
+          <Job work={work} c={this.props.isShowing ? 'show' : 'hide'}/>
             
             
           </div>
@@ -59,6 +64,7 @@ function Jobs(props) {
       }}
     />
   )
+}
 }
 
 const jobQuery = graphql`

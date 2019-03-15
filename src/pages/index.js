@@ -7,6 +7,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+
+
 class BlogIndex extends React.Component {
   constructor(props){
     super(props)
@@ -27,7 +29,8 @@ class BlogIndex extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-    const {showJobs} = this.state
+    const {showJobs} = this.state 
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -37,7 +40,7 @@ class BlogIndex extends React.Component {
         
         <Bio />
         <button onClick={this.toggleJobs}>Toggle Jobs</button>
-        {!showJobs ? <Jobs /> : null}
+        {!showJobs ? <Jobs isShowing={true} /> : null}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
