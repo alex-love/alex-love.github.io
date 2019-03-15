@@ -25,10 +25,14 @@ class BlogIndex extends React.Component {
     //   showJobs: !prevState.showJobs
     // }));
     if(this.state.className === 'show'){
-      this.setState({className: 'hide'})
+      this.setState({className: 'hide',
+      showJobs: false
+    })
     }
     else {
-      this.setState({className:'show'})
+      this.setState({className:'show',
+      showJobs: true
+    })
     }
   }
 
@@ -47,9 +51,9 @@ class BlogIndex extends React.Component {
         
         <Bio />
         <button onClick={this.toggleJobs}>Toggle Jobs</button>
+        {/* Conditionally Render Jobs and update className for fade in animation */}
         <div className={className}>
-        <Jobs />
-        {/*!showJobs ? <Jobs isShowing={true} /> : null*/}
+          {showJobs && <Jobs />}
         </div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug

@@ -1,6 +1,6 @@
 
 div.show {
-    transition: opacity 0.5s;
+    transition: opacity 1.5s;
     opacity: 1;
 }
 
