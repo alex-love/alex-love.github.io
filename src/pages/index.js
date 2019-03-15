@@ -8,19 +8,36 @@ import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      showJobs: true,
+    }
+    this.toggleJobs = this.toggleJobs.bind(this);
+
+  }
+
+  toggleJobs() {
+    this.setState(prevState => ({
+      showJobs: !prevState.showJobs
+    }));
+  }
+
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-
+    const {showJobs} = this.state
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={[`blog`, `gatsby`, `javascript`, `react`,'resume']}
         />
+        
         <Bio />
-        <Jobs />
+        <button onClick={this.toggleJobs}>Toggle Jobs</button>
+        {!showJobs ? <Jobs /> : null}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

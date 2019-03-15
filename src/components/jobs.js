@@ -16,7 +16,6 @@ function Job(props){
     const {work} = props 
     return (
      <div>
-         <button>Test</button>
        {work.map( (job) => {
            const {company, position, startDate, endDate, highlights, isCurrentJob} = job;
            return(
