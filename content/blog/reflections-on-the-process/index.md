@@ -6,7 +6,7 @@ date: 2019-03-19
 ## My History With CS and Programming
 It all began when I was a Junior in high school, growing up around computers, I was compelled to dig a little deeper, to possibly understand how all this software I was obsessed with was written.
 
-I enrolled in a computer science class at my high-school. While my located in the heart of silicon valley (Palo Alto) didn't actually have a CS teacher, we had a teacher who proctored us taking local community college classes. 
+I enrolled in a computer science class at my high-school. While my school was located in the heart of silicon valley (Palo Alto) didn't actually have a CS teacher, we had a teacher who proctored us taking local community college classes. 
 
 In total, I took 2 quarters worth of introductory CS classes. They were taught in JAVA and progressed us through the basics of programming and more specifically, OOP in JAVA. 
 
