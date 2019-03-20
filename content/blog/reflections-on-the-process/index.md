@@ -48,6 +48,13 @@ If I could talk to my younger self I would say something along these lines:
 
 > If you truly want to learn and become a better programmer, you need to work on it consistently. You also need to work on your own projects and write your own code. It's easy to get stuck in a viscious cycle of following tutorials or reading on concepts. The sooner you get to making your own stuff, the quicker you will learn.
 
+### Why I changed my major after 2 years of CS in college
+In college I switched from being a CS major to an Econ major after 2 years. I was frustrated with the quality of the courses I was taking and annoyed that we never had any actual projects in any of my classes. My curiosity was beginning to fizzle, and I was deeply interested in the questions that Economics proposed. I felt that my time and intellectual curiosity would better be spent studying Economics. 
+
+While this journey of learning has been long and confusing, ultimately I believe I made the correct choice. Studying Economics really helped advance my critical thinking and the way I solve and analyze a problem. At the same time, my CS experience was very useful in my problem solving process. I think the two went very well together for me and I left college feeling like I had learned quite a bit. 
+
+At some point I would like to finish a CS degree, or pursue an advanced degree. Ultimately I was only about 2-3 semesters away from a traditional CS degree. While I feel like I have learned far more outside of college, there are still a few subjects that I believe formal coursework would benefit me, those being: operating systems, databases, and networking. I think some foundational knowledge in those subjects would benefit me and I intent to take courses if I find the right opportunity. 
+
 ### Final Reflection
 My biggest struggle with programming is feeling like I'm learning too slowly. I think the easiest way for me to alleviate this concern is to look back at how far my knowledge has progressed since the previous period. For this post I'll highlight the skills that I have learned since graduating college. While I don't claim to be an expert in any of these skills, I've at least exposed myself to them.
 
@@ -73,6 +80,6 @@ The concept of web-servers was always a mystery to me. I had a general idea of w
 
 #### React
 
-I'm still learning React, but it's really helped me resolve my concern of how to implement web apps well. I like the component structure it provides and the lifecycle methods have been useful to me. I've been using it mostly out of curiousity as opposed to necessity, but I think it has improved my JS skills as well. 
+I'm still learning React, but it's really helped me resolve my concern of how to implement web apps well. I like the component structure it provides and the lifecycle methods have been useful to me. I've been using it mostly out of curiousity as opposed to necessity, but I think it has improved my JS skills as well. I've made simple flashcard app that randomly displays GRE test words that I initially scraped from a website using Python. 
 
 
