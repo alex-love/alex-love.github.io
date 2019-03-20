@@ -80,6 +80,6 @@ The concept of web-servers was always a mystery to me. I had a general idea of w
 
 #### React
 
-I'm still learning React, but it's really helped me resolve my concern of how to implement web apps well. I like the component structure it provides and the lifecycle methods have been useful to me. I've been using it mostly out of curiousity as opposed to necessity, but I think it has improved my JS skills as well. I've made simple flashcard app that randomly displays GRE test words that I initially scraped from a website using Python. 
+I'm still learning React, but it's really helped me resolve my concern of how to implement web apps well. I like the component structure it provides and the lifecycle methods have been useful to me. I've been using it mostly out of curiousity as opposed to necessity, but I think it has improved my JS skills as well. I've made simple flashcard app that randomly displays GRE test words that I initially scraped from a website using Python.
 
 
