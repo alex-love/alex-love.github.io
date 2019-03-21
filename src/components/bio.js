@@ -38,7 +38,7 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong>. A 24 year old just trying to enjoy my knees in the PNW while they're functional.
+               <strong>{author}</strong>. A 24 year old learning stuff and using my knees while they work.
               {` `}
               
             </p>
