@@ -34,6 +34,7 @@
         "Defrauded millions of dollars from initial investors"
       ]
     },
+    
     {   
         "currentJob": false,
         "company": "Company2",
@@ -48,6 +49,20 @@
             "plotted to put my coworkers against each other"
         ]
     },
+    {   
+      "currentJob": false,
+      "company": "Company8",
+      "position": "VP",
+      "website": "http://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "sdkfj lsakdfj alsdkfj alsdfj lsdkfj alsdkjf alskdfj ...",
+      "highlights": [
+          "destroyed the company",
+          "created chaos and a disfunctional office environment",
+          "plotted to put my coworkers against each other"
+      ]
+  },
     {   
         "currentJob": false,
         "company": "Company3",
