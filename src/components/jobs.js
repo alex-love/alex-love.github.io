@@ -17,7 +17,7 @@ class Job extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      jobNum: 3,
+      jobNum: 5,
     }
     this.change = this.change.bind(this)
   }
@@ -28,20 +28,16 @@ class Job extends React.Component{
 
   render(){
     const {work} = this.props 
+    let options = []
+    for (let i =0; i < this.state.jobNum; i++){
+      options.push(<option value={i+1}>{i+1}</option>)
+    }
     return (
      <div>
        <div>
          <p>How many jobs to show?</p>
        <select onChange={this.change} value={this.state.jobNum}>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
+        {options}
       </select>
       </div>
        {work.slice(0,this.state.jobNum).map( (job) => {
@@ -79,6 +75,7 @@ class Jobs extends React.Component {
       query={jobQuery}
       render={data => {
         const { work } = data.dataJson
+        const num = Object.keys(work).length;
         return (
           <div
             style={{
@@ -86,7 +83,7 @@ class Jobs extends React.Component {
               marginBottom: rhythm(2.5),
             }}
           >
-          <Job work={work} />
+          <Job work={work} num={num} />
             
             
           </div>
