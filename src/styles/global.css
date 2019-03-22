@@ -3,8 +3,9 @@ button {
     padding: 0.35em 1.2em;
     border: 0.1em solid #FFFFFF;
     margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
+    border-radius: 0.5em;
     box-sizing: border-box;
     font-weight: 600;
     color: black;
+    background-color: rgba(128, 128, 128, 0.521);
 }

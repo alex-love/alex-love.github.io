@@ -12,12 +12,30 @@ import { rhythm } from "../utils/typography"
 //import custom react components
 import DateRange from "./DateRange"
 
+class JobFilter extends React.Component{
+  constructor(props){
+    super(props)
+
+  }
+
+  render(){
+    return(
+      <div>
+        <p>How many jobs to show?</p>
+         <p>How many jobs to show?</p>
+      </div>
+    )
+  }
+}
+
 
 class Job extends React.Component{
   constructor(props){
     super(props)
     this.state = {
       jobNum: 5,
+      displayNum:3,
+      options: [],
     }
     this.change = this.change.bind(this)
   }
@@ -26,18 +44,23 @@ class Job extends React.Component{
     this.setState({jobNum: Number(event.target.value)})
   }
 
-  render(){
-    const {work} = this.props 
+  componentWillMount(){
     let options = []
     for (let i =0; i < this.state.jobNum; i++){
       options.push(<option value={i+1}>{i+1}</option>)
     }
+    this.setState({options: options})
+  }
+
+  render(){
+    const {work} = this.props 
+    
     return (
      <div>
        <div>
-         <p>How many jobs to show?</p>
+         <JobFilter />
        <select onChange={this.change} value={this.state.jobNum}>
-        {options}
+        {this.state.options}
       </select>
       </div>
        {work.slice(0,this.state.jobNum).map( (job) => {
