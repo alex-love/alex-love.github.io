@@ -22,7 +22,6 @@ class JobFilter extends React.Component{
     return(
       <div>
         <p>How many jobs to show?</p>
-         <p>How many jobs to show?</p>
       </div>
     )
   }
@@ -45,8 +44,9 @@ class Job extends React.Component{
   }
 
   componentWillMount(){
+
     let options = []
-    for (let i =0; i < this.state.jobNum; i++){
+    for (let i =0; i < this.props.num; i++){
       options.push(<option value={i+1}>{i+1}</option>)
     }
     this.setState({options: options})
@@ -106,9 +106,7 @@ class Jobs extends React.Component {
               marginBottom: rhythm(2.5),
             }}
           >
-          <Job work={work} num={num} />
-            
-            
+          <Job work={work} num={num} />  
           </div>
         )
       }}

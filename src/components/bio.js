@@ -38,7 +38,7 @@ function Bio() {
               }}
             />
             <p>
-               <strong>{author}</strong>. A 24 year old learning stuff and using my knees while they work.
+               <strong>{author}</strong>
               {` `}
               
             </p>
