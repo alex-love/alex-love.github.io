@@ -11,13 +11,9 @@ import { rhythm } from "../utils/typography"
 
 //import custom react components
 import DateRange from "./DateRange"
-import { isNullOrUndefined } from "util";
 
 class JobFilter extends React.Component{
-  constructor(props){
-    super(props)
-
-  }
+  
 
   render(){
     const {change, jobNum, options} = this.props
@@ -93,11 +89,6 @@ class Job extends React.Component{
 }
 
 class Jobs extends React.Component {
-  constructor(props){
-    super(props)
-  }
-
-
 
 
   render(){
