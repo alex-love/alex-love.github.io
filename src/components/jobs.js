@@ -66,7 +66,7 @@ class Job extends React.Component{
        {work.slice(0,this.state.jobNum).map( (job) => {
            const {company, position, startDate, endDate, highlights, isCurrentJob} = job;
            return(
-            <div className={this.props.c}>
+            <div >
                 <DateRange startDate={startDate} endDate={endDate} isCurrentJob={isCurrentJob} />
                 <h3>{company}</h3>
                 <p><em>{position}</em></p>
