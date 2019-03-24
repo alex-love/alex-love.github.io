@@ -4,7 +4,7 @@ date: 2019-02-10
 draft: false
 categories: [food, rant, recipe]
 tags: [safeway,bagels, food,cooking]
-published: false
+published: true
 ---  
 ### It's time I take a stand on what is and is not a bagel   
 #### 1. How do we define a bagel?

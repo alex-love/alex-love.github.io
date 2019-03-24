@@ -11,6 +11,7 @@ import { rhythm } from "../utils/typography"
 
 //import custom react components
 import DateRange from "./DateRange"
+import { isNullOrUndefined } from "util";
 
 class JobFilter extends React.Component{
   constructor(props){
@@ -19,9 +20,19 @@ class JobFilter extends React.Component{
   }
 
   render(){
+    const {change, jobNum, options} = this.props
     return(
       <div>
         <p>How many recent jobs to show?</p>
+        <div 
+        style={{
+          marginRight: rhythm(2),
+          marginTop: rhythm(-1)
+        }}>
+          <select onChange={change} value={jobNum}>
+            {options}
+          </select>
+        </div>
       </div>
     )
   }
@@ -32,11 +43,9 @@ class Job extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      jobNum: 3,
-      displayNum:3,
+      jobNum: 2,
       options: [],
     }
-    this.change = this.change.bind(this)
   }
 
   change = (event) => {
@@ -58,23 +67,23 @@ class Job extends React.Component{
     return (
      <div>
        <div>
-         <JobFilter />
-       <select onChange={this.change} value={this.state.jobNum}>
-        {this.state.options}
-      </select>
+         <JobFilter change={this.change} jobNum={this.state.jobNum} options={this.state.options} />
+      
       </div>
        {work.slice(0,this.state.jobNum).map( (job) => {
            const {company, position, startDate, endDate, highlights, isCurrentJob} = job;
            return(
             <div >
                 <DateRange startDate={startDate} endDate={endDate} isCurrentJob={isCurrentJob} />
-                <h3>{company}</h3>
-                <p><em>{position}</em></p>
+                <h4>{company}</h4>
+                <div style={{marginTop: rhythm(-1)}}>
+                <span ><p><em>{position}</em></p></span>
                 <ul>
                     {highlights.map((highlight,index)=>{
                         return <li key={index}>{highlight}</li>
                     })}
                 </ul>
+                </div>
             </div>
            )
        })}

@@ -29,81 +29,71 @@
       "endDate": "Present",
       "summary": "ipsum asdoifadspofiu aflakfj dlk jadslkj lsdkfj lsdkjf lsdkfj lsdfk ...",
       "highlights": [
-        "Founded the company",
-        "Ran it the business into the growd",
-        "Defrauded millions of dollars from initial investors"
+        "Create and design websites for clients to compliment their business strategy and needs",
+        "Use web analytics to influence online strategy",
+        "Migrated existing websites to new hosting, resulting in better site performance",
+        "Researched and templated new regular reporting strategy"
       ]
     },
     
     {   
         "currentJob": false,
-        "company": "Company2",
-        "position": "VP",
+        "company": "Pathology Associated Medical Laboratories",
+        "position": "Billing Integrity Specialist",
         "website": "http://company.com",
-        "startDate": "2013/01/01",
-        "endDate": "2014/01-/01",
+        "startDate": "2017/11/01",
+        "endDate": "2018/03-/10",
         "summary": "sdkfj lsakdfj alsdkfj alsdfj lsdkfj alsdkjf alskdfj ...",
         "highlights": [
-            "destroyed the company",
-            "created chaos and a disfunctional office environment",
-            "plotted to put my coworkers against each other"
+            "Verify integrity of secondary insurance claims",
+            "Submit secondary claims through web portal accurately",
+            "Compile paper claims and verify information"
         ]
     },
     {   
       "currentJob": false,
-      "company": "Company8",
-      "position": "VP",
+      "company": "Zag Shop - Follet Corporation",
+      "position": "Retail Team Member",
       "website": "http://company.com",
-      "startDate": "2013/01/01",
-      "endDate": "2014/01/01",
+      "startDate": "2017/08/01",
+      "endDate": "2017/09/01",
       "summary": "sdkfj lsakdfj alsdkfj alsdfj lsdkfj alsdkjf alskdfj ...",
       "highlights": [
-          "destroyed the company",
-          "created chaos and a disfunctional office environment",
-          "plotted to put my coworkers against each other"
+          "Resolve issues with online book orders",
+          "Enhanced order retrieval organization by pre-sorting orders",
+          "High volume, fast-pased environment required friendly demeanor and accuracy"
       ]
   },
   {   
     "currentJob": false,
-    "company": "brorista",
-    "position": "VP",
+    "company": "Chastek Law Library",
+    "position": "IT/AV Help Desk and Circulation Desk Assistant",
     "website": "http://company.com",
-    "startDate": "2013/01/01",
-    "endDate": "2014/01/01",
+    "startDate": "2017/06/15",
+    "endDate": "2018/08/01",
     "summary": "sdkfj lsakdfj alsdkfj alsdfj lsdkfj alsdkjf alskdfj ...",
     "highlights": [
-        "destroyed the company",
-        "created chaos and a disfunctional office environment",
-        "plotted to put my coworkers against each other"
+        "Provided IT support to law school faculty, staff, and students",
+        "Created welcoming and friendly front desk atmosphere",
+        "Assistent patrons and answered informational phone-calls"
     ]
 },
   {   
     "currentJob": false,
-    "company": "hello",
-    "position": "VP",
+    "company": "ComputerLaw Group LLP",
+    "position": "Summer Office Assistant/IT Consultant",
     "website": "http://company.com",
-    "startDate": "2013/01/01",
-    "endDate": "2014/01/01",
+    "startDate": "Summer 2014",
+    "endDate": "Summer 2015",
     "summary": "sdkfj lsakdfj alsdkfj alsdfj lsdkfj alsdkjf alskdfj ...",
     "highlights": [
-        "destroyed the company",
-        "created chaos and a disfunctional office environment",
-        "plotted to put my coworkers against each other"
+        "Increased organization and efficiency of inflow/outflow of documents via scanning/sorting",
+        "Organized filing system for bank statements, data backup, and mail inflow, provided a more functional office environment",
+        "Created reusable document forms using Adobe Acrobat",
+        "Created inventory spreadsheets in Excel",
+        "Assisted (Coordinated, etc.) with device management and network storage organization/backup"
+
     ]
-},
-{   
-  "currentJob": false,
-  "company": "new job",
-  "position": "VP",
-  "website": "http://company.com",
-  "startDate": "2013/01/01",
-  "endDate": "2014/01/01",
-  "summary": "sdkfj lsakdfj alsdkfj alsdfj lsdkfj alsdkjf alskdfj ...",
-  "highlights": [
-      "destroyed the company",
-      "created chaos and a disfunctional office environment",
-      "plotted to put my coworkers against each other"
-  ]
 }
     ],
     
