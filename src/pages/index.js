@@ -13,8 +13,8 @@ class BlogIndex extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      showJobs: true,
-      className: 'show',
+      showJobs: false,
+      className: 'hide',
     }
     this.toggleJobs = this.toggleJobs.bind(this);
 

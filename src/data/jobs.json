@@ -90,6 +90,20 @@
         "created chaos and a disfunctional office environment",
         "plotted to put my coworkers against each other"
     ]
+},
+{   
+  "currentJob": false,
+  "company": "new job",
+  "position": "VP",
+  "website": "http://company.com",
+  "startDate": "2013/01/01",
+  "endDate": "2014/01/01",
+  "summary": "sdkfj lsakdfj alsdkfj alsdfj lsdkfj alsdkjf alskdfj ...",
+  "highlights": [
+      "destroyed the company",
+      "created chaos and a disfunctional office environment",
+      "plotted to put my coworkers against each other"
+  ]
 }
     ],
     
@@ -105,11 +119,11 @@
       ]
     }],
     "education": [{
-      "institution": "University",
+      "institution": "Gonzaga University",
       "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
+      "studyType": "Bachelor of Science",
+      "startDate": "2013",
+      "endDate": "July 2017",
       "gpa": "4.0",
       "courses": [
         "DB1101 - Basic SQL"
@@ -130,13 +144,34 @@
     }],
     "skills": [{
       "name": "Web Development",
-      "level": "Master",
+      "level": "Intermediete",
       "keywords": [
         "HTML",
         "CSS",
-        "Javascript"
+        "Javascript",
+        "React"
       ]
-    }],
+    },
+    {
+      "name": "Data Analysis",
+      "level": "Intermediete",
+      "keywords":[
+        "statistics",
+        "excel/google sheets",
+        "econometrics"
+      ]
+    },
+    {
+      "name": "IT",
+      "level": "Intermediate",
+      "keywords":[
+        "PC Hardware",
+        "Mac/Windows"
+      ]
+
+    }
+  ]
+    ,
     "languages": [{
       "language": "English",
       "fluency": "Native speaker"

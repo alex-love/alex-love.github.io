@@ -21,7 +21,7 @@ class JobFilter extends React.Component{
   render(){
     return(
       <div>
-        <p>How many jobs to show?</p>
+        <p>How many recent jobs to show?</p>
       </div>
     )
   }
@@ -32,7 +32,7 @@ class Job extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      jobNum: 5,
+      jobNum: 3,
       displayNum:3,
       options: [],
     }
