@@ -50,7 +50,7 @@ class BlogIndex extends React.Component {
         />
         
         <Bio />
-        <button onClick={this.toggleJobs}>{showJobs? "Hide": "View my resume"}</button>
+        <button onClick={this.toggleJobs}>{showJobs? "Hide Resume": "View Resume"}</button>
         {/* Conditionally Render Jobs and update className for fade in animation */}
         <div className={className}>
           {showJobs && <Jobs />}

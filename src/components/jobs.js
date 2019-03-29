@@ -12,11 +12,14 @@ import { rhythm } from "../utils/typography"
 //import custom react components
 import DateRange from "./DateRange"
 
+
+
 class JobFilter extends React.Component{
   
 
   render(){
     const {change, jobNum, options} = this.props
+    
     return(
       <div>
         <p>How many recent jobs to show?</p>
@@ -34,6 +37,42 @@ class JobFilter extends React.Component{
   }
 }
 
+class Skills extends React.Component {
+  constructor(props){
+    super(props)
+    this.state ={skills: []}
+  }
+
+  componentWillMount(){
+    this.setState({skills: this.props.skills})
+  }
+
+  handleChange = (e) => {
+    this.setState({
+        skills: e.target.value
+    })
+  }
+
+  render(){
+  return (
+  <div style={{marginLeft: rhythm(3), display: "block"}}>
+  <h3>Skills</h3>
+    
+        {this.props.skills.map((skill)=>{
+            return (
+              <div style={{display: "inline-grid", marginRight: rhythm(1), marginLeft: rhythm(1)}}>
+              <h5>{skill.name}</h5>
+              <ul>
+              {skill.keywords.map((keyword) => <li key={keyword}>{keyword}</li>)}
+              </ul>
+             </div>
+            )
+          })}
+      
+  </div>
+  )
+}
+}
 
 class Job extends React.Component{
   constructor(props){
@@ -45,7 +84,7 @@ class Job extends React.Component{
   }
 
   change = (event) => {
-    this.setState({jobNum: Number(event.target.value)})
+    this.setState({jobNum: (event.target.value)})
   }
 
   componentWillMount(){
@@ -62,6 +101,7 @@ class Job extends React.Component{
     
     return (
      <div>
+       <h3>Experience</h3>
        <div>
          <JobFilter change={this.change} jobNum={this.state.jobNum} options={this.state.options} />
       
@@ -97,16 +137,17 @@ class Jobs extends React.Component {
     <StaticQuery
       query={jobQuery}
       render={data => {
-        const { work } = data.dataJson
+        const { work, skills } = data.dataJson
         const num = Object.keys(work).length;
         return (
           <div
             style={{
-              display: `flex`,
+              display: `inline`,
               marginBottom: rhythm(2.5),
             }}
           >
-          <Job work={work} num={num} />  
+          <Job work={work} num={num} /> 
+          <Skills skills={skills} />
           </div>
         )
       }}
@@ -133,6 +174,11 @@ const jobQuery = graphql`
           startDate
           endDate
           highlights
+        }
+        skills{
+          name
+          level
+          keywords
         }
       }
   }
