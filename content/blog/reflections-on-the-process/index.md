@@ -72,7 +72,7 @@ In my personal projects I always use git for version control. I really only do b
 
 #### NPM/package managers
 
-Package managers has been a gamechanger for me. Having a consistent environment/dependency structure has always been a confusion of mine, especially early on. Using npm has really made my life a lot easier and I use it everyday.
+Package managers have been a gamechanger for me. Having a consistent environment/dependency structure has always been a confusion of mine, especially early on. Using npm has really made my life a lot easier and I use it everyday.
 
 #### Node/Express, Python/Flask
 
