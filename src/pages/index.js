@@ -48,7 +48,7 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`,'resume']}
         />
-        
+        <Link to="/finance-app">Finance app</Link>
         <Bio />
         <button onClick={this.toggleJobs}>{showJobs? "Hide Resume": "View Resume"}</button>
         {/* Conditionally Render Jobs and update className for fade in animation */}
