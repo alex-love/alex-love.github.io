@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+  <script src="/js/main.js"></script>
+  <title>Alex Love's Portfolio</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <h1>Alex Love</h1>
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__inner-me">
+          <div class="profile">
+            <div class="img-wrap">
+              <img src="img/alex.jpg" class="profile-img">
+            </div>
+          </div>
+          <p class="description">I am a developer specializing in Frontend Development, with interests in all areas of
+            the stack. I have experience in VueJs, NuxtJs, Express/MongoDB, and some experience in AWS/Docker. I am currently freelancing on a full-stack application using the MEVN stack. <a href="#projects">Check out
+              some of my work below!</a></p>
+          
+            </div>
+          <div class="contact">
+            <p><a href="mailto:alove2096@gmail.com">Contact Me</a></p>
+          </div>
+      </div>
+    </section>
+    <section class="portfolio" id="projects">
+      <div class="portfolio__header">
+        <h2>Projects</h2>
+        <h5>Many of the projects I've worked on are short lived, and often no longer live. Upon request I'd be happy demo an old example, or privately share a previous staging link if still available.</h5>
+        <div class="portfolio_items">
+          <div class="card">
+            <div class="card__img">
+              <img src="/img/projects/pepsi-titth.png" alt="Pepsi Take it to the House">
+            </div>
+            <div class="card__body">
+              <h4 class="title">Pepsi - Take it To The House</h4>
+              <p>
+                I was the sole developer on this project. I used VueJs and and implemented localization for the project. One challenge was theming the project for different retailers via a different retailer specific route. I solved this by utilizing localStorage and using middleware for my router to serve the appropriate assets and copy.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="/img/projects/m-and-m.jpeg" alt="M&M Coloring Book">
+            </div>
+            <div class="card__body">
+              <h4 class="title">M&M Coloring Book</h4>
+              <p>
+                On this project I worked with several other developers to complete features for a web coloring book. I worked on all supporting pages of the experience, including a color palette and draw tool selection ui component. 
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="/img/projects/lays.png" alt="Lays - Turn up the Flavor">
+            </div>
+            <div class="card__body">
+              <h4 class="title">Lays - Turn Up The Flavor</h4>
+              <p>
+                This website was a giveaway website created for Lay's and The Voice. The website is no longer active but I am happy to provide a private demo upon request. This was a fun project because it involved a chair spin animation and countdown based on the number of entries a user had made. I created the chair spin animation by using css animation to transition over a sprite sheet. I was responsible for coding the frontend. It was also a fun learning experience because it was my first time interacting with a Graphql api.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="/img/projects/pepsi.png" alt="Pepsi - Gift it Forward">
+            </div>
+            <div class="card__body">
+              <h4 class="title">Pepsi - Gift it Forward</h4>
+              <p>
+                This was a holiday sweetstake giveaway website. I developed a gift-tag image generator component using canvas, a social-sharing component, and also improved error handling for the api calls.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <a target="_blank" href="https://el-salesforce-microsite.still.14four.com/" rel="noopener noreferrer">
+              <div class="card__img">
+                <img src="/img/projects/sf.png" alt="Salesforce - Holiday Gift Quiz">
+              </div>
+              <div class="card__body">
+                <h4 class="title">Salesforce - Holiday Gift Quiz</h4>
+                <p>
+                  This website was a quick turnaround holiday website. It involved some fun page transitions and other general animation. I am proud of the quality of this project given the very short development time of two weeks. Unfortunately this project was short lived and I am happy to provide a private demo upon request.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://woodbridgewines.com/" target="_blank" rel="noopener noreferrer">
+            <div class="card__img">
+              <img src="/img/projects/woodbridge-bg.png" alt="Woodbdrige Wines">
+            </div>
+            <div class="card__body">
+              <h4 class="title">Woodbridge Wines</h4>
+              <p>
+                This was a wine website made in Vue.js. It includes several dynamic pages that are generated through json files. The greatest challenge on this website was creating the wine description drop down effect, which involved animating the height on a container below a wine.
+              </p>
+            </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://westernstandardbeer.com/" target="_blank" rel="noopener noreferrer">
+            <div class="card__img">
+              <img src="/img/projects/western-standard.jpeg" alt="Western Standard Beer"
+            </div>
+            <div class="card__body">
+              <h4 class="title">Western Standard</h4>
+              <p>
+                I was the sole developer on this project. It was made in Vue.js and involved some trickly elements, such as setting up the svg border to scale properly. It also includes integration with Curate.io to add an Instagram feed, as this was a fully static website.
+              </p>
+            </div>
+          </a>
+          </div>
+        </div> 
+      </div>
+    </section>
+  </div>
+
+</body>
+
+</html>

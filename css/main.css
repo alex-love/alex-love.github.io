@@ -1,0 +1,119 @@
+:root {
+  --font-color: #fff;
+  --border-offset: -10px;
+  --card-bg-color: #fff;
+  --card-text-color: #000;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+  color: var(--font-color);
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+a {
+  color: red;
+}
+a::hover {
+  cursor: pointer;
+  color: var(--font-color);
+}
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+.hero {
+
+}
+.page-wrapper {
+  width: 90%;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+.contact {
+  text-align: center;
+}
+
+
+.hero__inner {
+  border: 3px solid red;
+  padding: 20px;
+  position: relative;
+}
+.hero__inner::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: var(--border-offset);
+  left: var(--border-offset);
+  right: var(--border-offset);
+  bottom: var(--border-offset);
+  border: 3px solid red;
+}
+
+.hero__inner-me {
+  display: flex;
+  align-items: center;
+}
+.hero__inner-me .img-wrap {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  /* overflow: hidden; */
+  /* border-radius: 50%; */
+}
+.hero__inner-me img {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+}
+
+/* portfolio */
+.portfolio {
+  margin-top: 50px;
+}
+.portfolio_items {
+
+}
+/* cards */
+.card a {
+  text-decoration: none;
+}
+
+.card{
+  width: 300px;
+  margin: 5px;
+}
+.card__img {
+  width: 100%;
+  background-color: var(--card-bg-color);
+}
+.card__img img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card__body {
+  background-color: var(--card-bg-color);
+  padding: 3px 10px;
+  min-height: 330px;
+}
+.card__body p, h4 {
+  color: var(--card-text-color);
+}
+.card__body p {
+  padding-bottom: 5px;
+  line-height: 1.5;
+}
+.card__body h4 {
+  margin: 0;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio_items {
+    justify-content: center;
+  }
+  
+}
