@@ -5,6 +5,10 @@
   --card-text-color: #000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a, p, h1, h2, h3, h4, h5, h6 {
   color: var(--font-color);
   font-family: 'Noto Sans TC', sans-serif;
@@ -16,6 +20,11 @@ a {
 a::hover {
   cursor: pointer;
   color: var(--font-color);
+}
+a.btn-check {
+  text-decoration: none;
+  display: block;
+  text-align: center;
 }
 body {
   height: 100vh;
@@ -33,11 +42,19 @@ body {
 }
 
 .contact {
-  text-align: center;
+  text-align: left;
   margin: 0;
   padding: 0;
 }
-
+.contact .btn {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 2px;
+  padding: 5px;
+}
+.contact .btn:hover {
+  cursor: pointer;
+}
 
 .hero__inner {
   padding: 10px;
