@@ -132,9 +132,18 @@ body {
   margin-top: 10px;
 }
 
+/* about */
+.about {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
 @media screen and (max-width: 600px) {
   .portfolio_items {
     justify-content: center;
+  }
+  .hide-mobile {
+    display: none;
   }
   
 }
