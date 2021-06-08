@@ -23,6 +23,7 @@ body {
 }
 
 .hero {
+  background-color: rgb(33, 52, 58);
 
 }
 .page-wrapper {
@@ -33,33 +34,28 @@ body {
 
 .contact {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 
 .hero__inner {
-  border: 3px solid red;
-  padding: 20px;
+  padding: 10px;
   position: relative;
-}
-.hero__inner::after {
-  position: absolute;
-  z-index: -1;
-  content: '';
-  top: var(--border-offset);
-  left: var(--border-offset);
-  right: var(--border-offset);
-  bottom: var(--border-offset);
-  border: 3px solid red;
 }
 
 .hero__inner-me {
   display: flex;
   align-items: center;
+  line-height: 1.5;
+}
+.hero__inner-me .description {
+  max-width: 800px;
+  margin: 0 auto;
 }
 .hero__inner-me .img-wrap {
-  width: 200px;
-  height: 200px;
   position: relative;
+  margin-right: 10px;
   /* overflow: hidden; */
   /* border-radius: 50%; */
 }
