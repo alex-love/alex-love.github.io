@@ -3,6 +3,7 @@
   --border-offset: -10px;
   --card-bg-color: #fff;
   --card-text-color: #000;
+  --link-text-color: #f54748;
 }
 
 html {
@@ -15,7 +16,7 @@ a, p, h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: red;
+  color: var(--link-text-color);
 }
 a::hover {
   cursor: pointer;
