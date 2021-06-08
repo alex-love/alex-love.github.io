@@ -27,6 +27,13 @@ a.btn-check {
   display: block;
   text-align: center;
 }
+button.btn {
+  border: none;
+  background-color: var(--card-bg-color);
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 3px 5px;
+}
 body {
   height: 100vh;
   background-color: black;
