@@ -118,7 +118,7 @@ body {
 .card__body {
   background-color: var(--card-bg-color);
   padding: 3px 10px;
-  min-height: 330px;
+  padding-bottom: 8px;
 }
 .card__body p, h4 {
   color: var(--card-text-color);
